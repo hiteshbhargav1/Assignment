@@ -1,0 +1,23 @@
+<?php
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+* Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
+*/
+
+/**
+ * hook_theme
+ */
+function admin_config_assignment_theme() {
+    $callService = \Drupal::service('admin_cnf_timezone.config');
+    $result = $callService->getCurentTime();
+    $data = array(
+        'current_time' => $result
+    );
+    return [
+        'custom_time_block' => [
+            'variables' => [
+            'data' => $data,
+            ],
+        ],
+    ];
+}

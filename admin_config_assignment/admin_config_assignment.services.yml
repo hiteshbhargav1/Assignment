@@ -1,0 +1,5 @@
+## YAML Template.
+services:
+    admin_cnf_timezone.config:
+        class: Drupal\admin_config_assignment\services\TimezoneConfigService
+    #    arguments: ['@config.factory']

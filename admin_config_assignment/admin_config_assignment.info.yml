@@ -1,0 +1,7 @@
+## YAML Template.
+---
+name: Admin Config Assignment module
+description: Admin Configuration for Timezone
+type: module
+package: Custom
+core_version_requirement: ^8 || ^9

@@ -1,0 +1,9 @@
+## YAML Template.
+
+AssignmentConfigAdminForm.form:
+    path: '/admin/config/admin_timezone_setting'
+    defaults:
+        _form: '\Drupal\admin_config_assignment\Form\AdminAssignmentForm'
+        _title: 'Admin Timezone configuration'
+    requirements:
+        _permission: 'access admin Timezone configurations'

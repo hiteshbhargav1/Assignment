@@ -1,0 +1,8 @@
+## YAML Template.
+---
+admin_config_assignment.admin:
+  title: 'Timezone Config settings'
+  description: 'Timezone Config settings'
+  parent: system.admin_config_development
+  route_name: AssignmentConfigAdminForm.form
+  weight: -99
